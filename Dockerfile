@@ -4,7 +4,11 @@ WORKDIR /app
 
 COPY . /app
 
+USER root
+
 RUN pip install --no-cache-dir Flask
+
+RUN chmod 777 /app/temp
 
 EXPOSE 5000
 

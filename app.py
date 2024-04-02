@@ -64,4 +64,4 @@ def process():
         return jsonify({"message":f"Opps! Looks like the CSV file does not contains the correct data column!"}), 404
 
 if __name__ == "__main__":
-   app.run(debug=True)
+   app.run(host="0.0.0.0", port=80)
