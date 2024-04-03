@@ -8,6 +8,8 @@ USER root
 
 RUN pip install --no-cache-dir Flask
 
+RUN pip install flask-cors
+
 RUN chmod 777 /app/temp
 
 EXPOSE 5000
